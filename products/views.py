@@ -12,5 +12,5 @@ def all_products(request):
 
 
 def buy_product(request):
-
+    print(request)
     return render(request=request, template_name='payment.html', context={"form": PaymentForm})
